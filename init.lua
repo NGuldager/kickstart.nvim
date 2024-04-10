@@ -603,6 +603,7 @@ require('lazy').setup({
 
   { -- Autoformat
     'stevearc/conform.nvim',
+    event = { 'BufReadPre', 'BufNewFile' },
     lazy = false,
     keys = {
       {
@@ -634,6 +635,15 @@ require('lazy').setup({
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         javascript = { 'prettierd', 'eslint_d' },
+        typescript = { 'prettierd', 'eslint_d' },
+        javascriptreact = { 'prettierd', 'eslint_d' },
+        typescriptreact = { 'prettierd', 'eslint_d' },
+        css = { 'prettierd', 'eslint_d' },
+        html = { 'prettierd', 'eslint_d' },
+        json = { 'prettierd', 'eslint_d' },
+        yaml = { 'prettierd', 'eslint_d' },
+        markdown = { 'prettierd', 'eslint_d' },
+        graphql = { 'prettierd', 'eslint_d' },
       },
     },
   },
